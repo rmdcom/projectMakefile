@@ -13,8 +13,8 @@ SRCS=$(wildcard $(SRC)/%.c))
 # search for the pattren *.c [First argument] in SRCS [Third argument]
 # and substitute with  *.o [Second argument] i.e For the *.c source files in SRC gereate the *.o files matching the pattern
 # This is eleminate the all listing the object files
-# OBJS=obj/allocator.o obj/memtest.o 
-OBJS=$(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SRCS))
+ OBJS=obj/allocator.o obj/memtest.o 
+#OBJS=$(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SRCS))
 
 BINDIR=bin
 BIN=$(BINDIR)/main
